@@ -1,0 +1,51 @@
+//- index.jade
+extends ./layout.jade
+
+block row-content
+ div.container
+  div.row
+   .flashcard
+    .col.col-md-4.col-md-offset-4
+      #word
+      #mean
+      button#nextWord.btn.btn-success.btn-block Next Word
+ div.container
+     div.row
+      div.col-lg-12
+        h2 Need a Word? Try me!
+        div.row
+          div.col-lg-12.col-md-12.col-xs-12
+            p.help-block If you aren't able to figure out a word for a phrase in your mind. No problem. Wordinator is here. Try it out yourself.
+        div.row
+          div.col-lg-10.col-md-10.col-xs-8
+            input.questionText.form-control(placeholder='Enter a phrase or a word', required='true')
+          div.col-lg-2.col-md-2.col-xs-4
+            button.btn.btn-block.btn-info Go
+        div.row
+         div.col-lg-12.col-md-12.col-xs-12
+          h4 Sample questions
+          div.example-questions
+        
+      div.col-lg-12(style='height:300px;')
+        div.row
+          h2 Output
+        div.row.loading(style='display:none')
+          div.col-lg-12.col-xs-12.text-center
+            img(src='images/watson.gif', width='110px')
+        div.results(style='display:none')
+          div.well
+            p Wordinator is 
+              span.confidence
+              |  confident that you were looking for '
+              span.classification
+              | '.
+            p
+              span.classification
+            p
+              span#meaningResult
+            
+              
+        div.error(style='display:none;')
+          h2 Error
+          div.well
+            div.errorMsg

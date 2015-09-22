@@ -1,0 +1,37 @@
+.errorMsg {
+  font-weight:bold;
+  color:red;
+  white-space: pre-wrap;
+}
+
+.example-questions {
+ margin: 5px;
+}
+
+.example-questions a {
+	display: block;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+.confidence {
+	color: #d74108;
+}
+
+.classification {
+	color: #d74108;
+}
+
+
+a{
+    color: #F44336;
+}
+
+a:hover,a:active{
+    color:#9E2B23;
+}
+
+
+
+#word{
+    
+}
